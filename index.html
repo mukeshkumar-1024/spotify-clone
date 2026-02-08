@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Import Font Asswome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- add logo of our website in title -->
+    <link rel="icon" href="./assets/logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+
+    <!-- import our css file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- import google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="main">
+
+        <!-- sidebar section -->
+        <div class="sidebar">
+
+            <!-- header section -->
+            <div class="nav">
+                <div class="nav-options" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+
+                <div class="nav-options">
+                    <i class="fa-duotone fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            
+            <!-- library section -->
+            <div class="library">
+
+                <!-- options section -->
+                <div class="options">
+
+                    <div class="lib-options nav-options">
+                        <img src="./assets/library_icon.png" alt="library-icon">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="lib-icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </div>
+
+                <!-- library boxes sections -->
+                <div class="lib-boxes">
+
+                    <div class="lib-box">
+
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button type="button" class="badge">Create playlist</button>
+                        
+                    </div>
+
+                    <div class="lib-box">
+                        
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button type="button" class="badge">Browser podcasts</button>
+                        
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!-- main-content section -->
+        <div class="main-content">
+
+            <!-- navbar -->
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./assets/backward_icon.png" alt="">
+                    <img src="./assets/forward.png" class="hide" alt="">
+                </div>
+                <div class="sticky-nav-options">
+                    <button type="button" class="badge nav-items hide">Explore Premium</button>
+                    <button type="button" class="badge nav-items dark-badge"><i class="fa-regular fa-circle-down" style="margin-right: 6px;"></i>Install App</button>
+                    <i class="fa-slab-press fa-regular fa-user nav-items user-icon"></i>
+                </div>
+            </div>
+
+            <!-- playlist1 -->
+            <h2>Recommended for today</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card123img.jpeg" alt="card2.jpeg">
+                    <p class="card-title"> Midnight Mood Mix</p>
+                    <p class="card-info">Songs trending near you right now...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card124img.jpeg" alt="card3.jpeg">
+                    <p class="card-title">Lo-Fi Focus Beats</p>
+                    <p class="card-info">Smooth sounds to relax your mind...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card125img.jpeg" alt="card4.jpeg">
+                    <p class="card-title">Viral Hits Today</p>
+                    <p class="card-info">Songs everyone is playing right now...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card126img.jpeg" alt="card3.jpeg">
+                    <p class="card-title">Daily Most Played</p>
+                    <p class="card-info">Top tracks played near you today...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card127img.jpeg" alt="card3.jpeg">
+                    <p class="card-title">Evening Chillout</p>
+                    <p class="card-info">Soft music for peaceful evenings...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card128img.jpeg" alt="card2.jpeg">
+                    <p class="card-title">After Dark Vibes</p>
+                    <p class="card-info">Perfect tracks for night sessions...</p>
+                </div>
+                
+                <div class="card">
+                    <img src="./assets/card129img.jpeg" alt="card3.jpeg">
+                    <p class="card-title">Lo-Fi Late Hours</p>
+                    <p class="card-info">Relaxing beats for quiet moments...</p>
+                </div>
+                
+                <div class="card">
+                    <img src="./assets/card130img.jpeg" alt="card4.jpeg">
+                    <p class="card-title">Trending Right Now</p>
+                    <p class="card-info">What listeners are loving today...</p>
+                </div>
+                
+                <div class="card">
+                    <img src="./assets/card131img.jpeg" alt="card3.jpeg">
+                    <p class="card-title">On Repeat Picks</p>
+                    <p class="card-info">Songs people can’t stop playing...</p>
+                </div>
+                
+                <div class="card">
+                    <img src="./assets/card132img.jpeg" alt="card3.jpeg">
+                    <p class="card-title">Sunset Relax Mix</p>
+                    <p class="card-info">Calm tunes for winding down...</p>
+                </div>
+            </div>
+
+            <!-- playlist2 -->
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Your Recent Favorites</p>
+                    <p class="card-info">Songs you played earlier today...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card121img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Last Played Mix</p>
+                    <p class="card-info">Picked from your listening history...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card122img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Repeat Sessions</p>
+                    <p class="card-info">Tracks you’ve enjoyed recently...</p>
+                </div>
+            </div>
+
+            <!-- Popular Artists -->
+            <h2>Popular artists</h2>
+            <div class="popular-artists-container">
+
+                <!-- Artist1 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/Pritam.jpeg" alt="Pritam">
+                    <a href="#">Pritam</a><br>
+                    <span>Artist</span>
+                </div>
+
+                <!-- Artist2 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/A.R.rahman.jpeg" alt="A.R.Rahman">
+                    <a href="#">A.R. Rahman</a><br>
+                    <span>Artist</span>
+                </div>
+
+                <!-- Artist3 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/arijit_singh.jpeg" alt="Arijit Sing">
+                    <a href="#">Arijit Singh</a><br>
+                    <span>Artist</span>
+                </div>
+
+                <!-- Artist4 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/sachin-jigar.jpeg" alt="Sachin-Jigar">
+                    <a href="#">Sachin-Jigar</a><br>
+                    <span>Artist</span>
+                </div>
+
+                <!-- Artist5 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/vishal-shekhar.jpeg" alt="Vishal-Shekhar">
+                    <a href="#">Vishal-Shekhar</a><br>
+                    <span>Artist</span>
+                </div>
+        
+                <!-- Artist6 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/atif-aslam.jpeg" alt="Atif-Aslam">
+                    <a href="#">Atif Aslam</a><br>
+                    <span>Artist</span>
+                </div>
+
+                <!-- Artist7 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/udit-narayan.jpeg" alt="Udit-Narayan">
+                    <a href="#">Udit Narayan</a><br>
+                    <span>Artist</span>
+                </div>
+
+                <!-- Artist8 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/yo yo honey sing.jpeg" alt="Yo Yo Honey Sing">
+                    <a href="#">Yo Yo Honey Singh</a><br>
+                    <span>Artist</span>
+                </div>
+
+                <!-- Artist9 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/sidhu moosawala.jpeg" alt="Sidhu Moosawala">
+                    <a href="#">Sidhu Moose Wala</a><br>
+                    <span>Artist</span>
+                </div>
+
+                <!-- Artist10 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/karan aujala.jpeg" alt="Karan Aujala">
+                    <a href="#">Karan Aujala</a><br>
+                    <span>Artist</span>
+                </div>
+
+                <!-- Artist11 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/diljit-doshanjh.jpeg" alt="Diljit Doshanjh">
+                    <a href="#">Diljit Doshanjh</a><br>
+                    <span>Artist</span>
+                </div>
+
+                <!-- Artist12 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/Ap Dhillon.jpeg" alt="Ap Dhillon">
+                    <a href="#">Ap Dhillon</a><br>
+                    <span>Artist</span>
+                </div>
+                
+                <!-- Artist13 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/subh.jpeg" alt="Subh">
+                    <a href="#">Subh</a><br>
+                    <span>Artist</span>
+                </div>
+                
+                <!-- Artist14 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/navan sindhu.jpeg" alt="Navan Sindhu">
+                    <a href="#">Navan Sindhu</a><br>
+                    <span>Artist</span>
+                </div>
+                
+                <!-- Artist15 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/prem dhillon.jpeg" alt="Prem Dhillon">
+                    <a href="#">Prem Dhillon</a><br>
+                    <span>Artist</span>
+                </div>
+                
+                <!-- Artist16 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/cheema y.jpeg" alt="Cheema Y">
+                    <a href="#">Cheema Y</a><br>
+                    <span>Artist</span>
+                </div>
+                
+                <!-- Artist17 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/parmish verma.jpeg" alt="Parmish Verma">
+                    <a href="#">Parmish Verma</a><br>
+                    <span>Artist</span>
+                </div>
+                
+                <!-- Artist18 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/amanraj gill.jpeg" alt="Amanraj Gill">
+                    <a href="#">Amanraj Gill</a><br>
+                    <span>Artist</span>
+                </div>
+                
+                <!-- Artist19 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/neha kakkar.jpeg" alt="Neha Kakkar">
+                    <a href="#">Neha Kakkar</a><br>
+                    <span>Artist</span>
+                </div>
+                
+                <!-- Artist20 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/massom sharma.jpeg" alt="Masso Sharma">
+                    <a href="#">Massom Sharma</a><br>
+                    <span>Artist</span>
+                </div>
+                
+                <!-- Artist21 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/shreya ghoshal.jpeg" alt="Shreya Ghoshal">
+                    <a href="#">Shreya Ghoshal</a><br>
+                    <span>Artist</span>
+                </div>
+
+                <!-- Artist22 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/mithoon.jpeg" alt="Mithoon">
+                    <a href="#">Mithoon</a><br>
+                    <span>Artist</span>
+                </div>
+
+                <!-- Artist23 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/sonu negam.jpeg" alt="Sonu Negam">
+                    <a href="#">Sonu Nigam</a><br>
+                    <span>Artist</span>
+                </div>
+
+                <!-- Artist24 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/talwiinder.jpeg" alt="Talwiinder">
+                    <a href="#">Talwiinder</a><br>
+                    <span>Artist</span>
+                </div>
+
+                <!-- Artist25 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/2pac.jpeg" alt="2Pac">
+                    <a href="#">2Pac</a><br>
+                    <span>Artist</span>
+                </div>
+
+                <!-- Artist26 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/tulchaaram bangava.jpeg" alt="Tulcharam Bangawa">
+                    <a href="#">Tulcharam Bangawa</a><br>
+                    <span>Artist</span>
+                </div>
+
+                <!-- Artist27 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/Badshah.jpeg" alt="Badshah">
+                    <a href="#">Badshah</a><br>
+                    <span>Artist</span>
+                </div>
+
+                <!-- Artist28 -->
+                <div class="popular-artists-card">
+                    <img src="./assets/Guru randhava.jpeg" alt="Guru Randhawa">
+                    <a href="#">Guru Randhawa</a><br>
+                    <span>Artist</span>
+                </div>
+
+            </div>
+
+            <!-- playlist3 -->
+            <h2>Trending now near you</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card12img.jpeg" alt="card2.jpeg">
+                    <p class="card-title">Top 50 - Local Viral Tracks</p>
+                    <p class="card-info">Trending songs around your area...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card18img.jpeg" alt="card3.jpeg">
+                    <p class="card-title">Top 50 - Most Shared Songs</p>
+                    <p class="card-info">Tracks gaining fast popularity...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card130img.jpeg" alt="card4.jpeg">
+                    <p class="card-title">Top 50 - Hot Right Now</p>
+                    <p class="card-info">Music everyone is streaming today...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card3img.jpeg" alt="card3.jpeg">
+                    <p class="card-title">Top 50 - Fresh Lo-Fi Buzz</p>
+                    <p class="card-info">Popular chill beats right now...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card2img.jpeg" alt="card3.jpeg">
+                    <p class="card-title">Evening Trending</p>
+                    <p class="card-info">Popular picks for this time...</p>
+                </div>
+            </div>
+
+            <!-- playlist4 -->
+            <h2>Editor'sPick</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card111img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Editor’s Choice Mix</p>
+                    <p class="card-info">Handpicked songs just for you...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card112img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Staff Favorite Tracks</p>
+                    <p class="card-info">Curated by music editors...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card113img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">India Top Picks</p>
+                    <p class="card-info">Popular songs across India...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card114img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Premium Selection</p>
+                    <p class="card-info">Carefully chosen top tracks...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card115img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Must-Listen Picks</p>
+                    <p class="card-info">Editor recommended listening...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card116img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Best of Today</p>
+                    <p class="card-info">Top quality tracks selected...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card117img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Weekly Highlights</p>
+                    <p class="card-info">Editor spotlight for this week...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card118img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Sound Picks</p>
+                    <p class="card-info">Specially curated music list...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card119img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Trending Editors Mix</p>
+                    <p class="card-info">Editor approved trending tracks...</p>
+                </div>
+    
+                <div class="card">
+                    <img src="./assets/card120img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top Editorial Choice</p>
+                    <p class="card-info">Selected hits worth listening...</p>
+                </div>
+
+            </div>
+
+            <!-- playlist5 -->
+            <h2>Sad songs</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card101img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Heartbreak Hits</p>
+                    <p class="card-info">Songs for emotional moments...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card102img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Alone Time Tracks</p>
+                    <p class="card-info">Music for quiet sad hours...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card103img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top Songs - Emotional India</p>
+                    <p class="card-info">Soul touching Indian songs...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card104img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Broken Mood Mix</p>
+                    <p class="card-info">Tracks for deep feelings...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card105img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Late Night Sadness</p>
+                    <p class="card-info">Songs for lonely nights...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card106img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Painful Memories</p>
+                    <p class="card-info">Music that hits the heart...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card107img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Lost Love Tracks</p>
+                    <p class="card-info">Songs about love and loss...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card108img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Slow Emotional Beats</p>
+                    <p class="card-info">Soft tunes for heavy hearts...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card109img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Sad Vibes Only</p>
+                    <p class="card-info">Music for emotional moods...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card110img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Melancholy Mix</p>
+                    <p class="card-info">Songs that express feelings...</p>
+                </div>
+            
+            </div>
+
+            <!-- playlist6 -->
+            <h2>Throwback</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card92img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Old School Classics</p>
+                    <p class="card-info">Popular songs from past years...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card93img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Golden Era Hits</p>
+                    <p class="card-info">Timeless tracks everyone loved...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card94img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">India Nostalgia</p>
+                    <p class="card-info">Memorable Indian classics...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card95img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Retro Party Mix</p>
+                    <p class="card-info">Old hits still loved today...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card96img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">90s Throwback</p>
+                    <p class="card-info">YSongs from golden decades...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card97img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Classic Replay</p>
+                    <p class="card-info">Relive old music moments...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card98img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Vintage Favorites</p>
+                    <p class="card-info">Old songs still trending...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card99img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Back in Time</p>
+                    <p class="card-info">Music from earlier days...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card100img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Retro Mood</p>
+                    <p class="card-info">Old vibes never fade...</p>
+                </div>
+            
+            </div>
+
+            <!-- playlist7 -->
+            <h2>Party</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card82img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Party Starters</p>
+                    <p class="card-info">High energy party tracks...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card83img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Dance Floor Hits</p>
+                    <p class="card-info">Music to keep you moving...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card84img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">India Party Beats</p>
+                    <p class="card-info">Popular party songs in India...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card85img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Night Club Mix</p>
+                    <p class="card-info">Perfect beats for nightlife...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card86img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Weekend Vibes</p>
+                    <p class="card-info">Songs for party nights...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card87img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Non-Stop Party</p>
+                    <p class="card-info">Continuous party energy tracks...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card88img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Bass Boost Mix</p>
+                    <p class="card-info">Heavy beats for loud fun...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card89img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">House Party Hits</p>
+                    <p class="card-info">Music everyone dances to...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card90img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">DJ Night Picks</p>
+                    <p class="card-info">Club style trending tracks...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card91img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Late Night Party</p>
+                    <p class="card-info">Songs for midnight fun...</p>
+                </div>
+            
+            </div>
+
+            <!-- playlist8 -->
+            <h2>Happy</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card72img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Feel Good Songs</p>
+                    <p class="card-info">Music that lifts your mood...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card73img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Positive Vibes</p>
+                    <p class="card-info">Songs full of good energy...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card74img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">India Happy Hits</p>
+                    <p class="card-info">Joyful songs from India...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card75img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Smile Mix</p>
+                    <p class="card-info">Tracks that make you smile...</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/card76img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Morning Happiness</p>
+                    <p class="card-info">Perfect songs to start day...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card77img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Bright Mood Beats</p>
+                    <p class="card-info">Light and cheerful tunes...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card78img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Good Times Playlist</p>
+                    <p class="card-info">Songs for happy moments...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card79img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Sunshine Songs</p>
+                    <p class="card-info">Music full of positivity...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card80img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Cheerful Mix</p>
+                    <p class="card-info">Feel-good tracks all day...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card81img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Happy Hours</p>
+                    <p class="card-info">Songs for joyful vibes...</p>
+                </div>
+            
+            </div>
+
+            <!-- playlist9 -->
+            <h2>Feature Charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card71img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Global Top Charts</p>
+                    <p class="card-info">Most streamed songs worldwide...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card6img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Chartbusters Today</p>
+                    <p class="card-info">Top ranking songs right now...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card5img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">India Chart Hits</p>
+                    <p class="card-info">Trending songs across India...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card70img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Weekly Charts</p>
+                    <p class="card-info">This week’s top music...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Worldwide Hits</p>
+                    <p class="card-info">Popular tracks everywhere...</p>
+                </div>
+
+            </div>
+
+            <!-- playlist10 -->
+            <h2>Today's biggest hits</h2>
+            <div class="cards-container">
+
+                <div class="card">
+                    <img src="./assets/card7img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Today’s Hit Songs</p>
+                    <p class="card-info">Most popular songs today...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card8img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Streaming Now</p>
+                    <p class="card-info">Currently trending hits...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card9img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Daily Top Tracks</p>
+                    <p class="card-info">Today’s most played songs...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card10img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Hit Machine</p>
+                    <p class="card-info">Songs dominating charts...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card11img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Biggest Streams</p>
+                    <p class="card-info">Massively played tracks...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card12img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Music Spotlight</p>
+                    <p class="card-info">Songs everyone’s talking about...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card13img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top Daily Picks</p>
+                    <p class="card-info">Best hits of the day...</p>
+                </div>
+
+            </div>
+
+            <!-- playlist11 -->
+            <h2>Chill</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card14img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Chill Daily Mix</p>
+                    <p class="card-info">Relaxed tracks for calm mood...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card15img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Soft Chill Beats</p>
+                    <p class="card-info">Easy listening all day...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card16img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Cool Evening</p>
+                    <p class="card-info">Smooth songs for evenings...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card17img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Relax Mode</p>
+                    <p class="card-info">Music to slow down...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card18img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Quiet Time</p>
+                    <p class="card-info">Peaceful tracks for you...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card19img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Low Energy Vibes</p>
+                    <p class="card-info">Gentle and calm sounds...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card20img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Lo-Fi Chill</p>
+                    <p class="card-info">Soft beats for relaxing...</p>
+                </div>
+            </div>
+
+            <!-- playlist12 -->
+            <h2>Sing-along</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card63img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Sing Along Hits</p>
+                    <p class="card-info">Songs you love to sing...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card64img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Lyrics Friendly</p>
+                    <p class="card-info">Easy songs to sing with...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card65img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Popular Sing Songs</p>
+                    <p class="card-info">Everyone knows these lyrics...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card66img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Vocal Favorites</p>
+                    <p class="card-info">Perfect tracks for singing...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card67img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Chorus Hits</p>
+                    <p class="card-info">Songs with catchy lines...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card68img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Sing Loud Mix</p>
+                    <p class="card-info">Fun songs to sing along...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card69img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Crowd Favorites</p>
+                    <p class="card-info">Songs everyone sings together...</p>
+                </div>
+        
+            </div>
+
+            <!-- playlist13 -->
+            <h2>Top pick in new music</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card54img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Fresh Release Picks</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card55img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - New Music Radar</p>
+                    <p class="card-info">Discover fresh tracks here...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card56img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Trending New Songs</p>
+                    <p class="card-info">New music gaining attention...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card57img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Latest Hits</p>
+                    <p class="card-info">Recently released popular songs...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card58img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Brand New Sounds</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card59img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - New Artist Picks</p>
+                    <p class="card-info">Upcoming artists and tracks...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card60img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Fresh Vibes</p>
+                    <p class="card-info">New songs worth listening...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card61img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Just Dropped</p>
+                    <p class="card-info">YSongs released recently...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card62img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - New Music Buzz</p>
+                    <p class="card-info">Latest tracks making noise...</p>
+                </div>
+
+            </div>
+
+            <!-- playlist14 -->
+            <h2>Charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card10img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Top Chart Songs</p>
+                    <p class="card-info">Highest ranking tracks today...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card24img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Global Rankings</p>
+                    <p class="card-info">Top songs worldwide now...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card25img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Chart Toppers</p>
+                    <p class="card-info">Songs leading the charts...</p>
+                </div>
+    
+                <div class="card">
+                    <img src="./assets/card22img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Weekly Rankings</p>
+                    <p class="card-info">This week’s chart leaders...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card21img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Popular Charts</p>
+                    <p class="card-info">Most listened chart songs...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card23img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Top 50 - Hit Rankings</p>
+                    <p class="card-info">Top chart hits today...</p>
+                </div>
+            </div>
+
+            <!-- playlist15 -->
+            <h2>Fresh new music</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card46img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Fresh Music Picks</p>
+                    <p class="card-info">New songs for discovery...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card47img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Latest Sound Mix</p>
+                    <p class="card-info">Explore new musical styles...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card48img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">New Tracks Today</p>
+                    <p class="card-info">Recently added songs...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card49img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Fresh Drops</p>
+                    <p class="card-info">New releases to check...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card50img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Rising Songs</p>
+                    <p class="card-info">New tracks gaining listeners...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card51img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Upcoming Hits</p>
+                    <p class="card-info">Potential future chartbusters...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card52img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">New Artist Radar</p>
+                    <p class="card-info">Discover fresh talent...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card53img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Fresh Beats</p>
+                    <p class="card-info">New music for every mood...</p>
+                </div>
+
+            </div>
+
+            <!-- playlist16 -->
+            <h2>Workout</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card26img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Workout Boost</p>
+                    <p class="card-info">High energy tracks for training...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card27img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Gym Motivation</p>
+                    <p class="card-info">Music to push harder...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card28img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Power Training</p>
+                    <p class="card-info">Strong beats for workouts...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card29img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Running Mix</p>
+                    <p class="card-info">Perfect pace music...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card30img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Fitness Energy</p>
+                    <p class="card-info">Stay active with these songs...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card31img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Cardio Beats</p>
+                    <p class="card-info">Fast tracks for movement...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card32img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Gym Hits</p>
+                    <p class="card-info">Popular workout songs...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card33img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Training Mode</p>
+                    <p class="card-info">Music for intense sessions...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card34img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Sweat It Out</p>
+                    <p class="card-info">Energy packed tracks...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card35img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Workout Drive</p>
+                    <p class="card-info">Stay motivated while training...</p>
+                </div>
+            </div>
+
+            <!-- playlist17 -->
+            <h2>Try something else</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card36img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Discover Something New</p>
+                    <p class="card-info">Explore different music styles...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card37img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Random Picks</p>
+                    <p class="card-info">Something fresh for you...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card38img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Genre Switch</p>
+                    <p class="card-info">Try a new music vibe...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card39img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Hidden Gems</p>
+                    <p class="card-info">Underrated tracks to explore...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card40img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Surprise Mix</p>
+                    <p class="card-info">Unexpected songs for you...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card41img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Explore Sounds</p>
+                    <p class="card-info">Find something different...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card42img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">New Mood Music</p>
+                    <p class="card-info">Change your listening style...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card43img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Music Discovery</p>
+                    <p class="card-info">Explore beyond your taste...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card44img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Fresh Suggestions</p>
+                    <p class="card-info">New recommendations for you...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card45img.jpeg" alt="card1.jpeg">
+                    <p class="card-title">Something Different</p>
+                    <p class="card-info">Try a new sound today...</p>
+                </div>
+
+            </div> 
+
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+
+        </div>
+
+        <!-- music-player section -->
+        <div class="music-player">
+
+            <!-- album section -->
+            <div class="album">
+             
+                <img src="./assets/hoperless.jpeg" alt="">
+          
+                <span class="player-info">
+                    <a href="#" style="opacity: 1;">Hopeless</a><br>
+                    <a href="#" style="font-size:  0.6875rem;">Amanraj Gill </a><a href="#">, Prem Lata</a>
+                </span>
+                <div class="player-add-like-icon">
+                    <i class="fa-solid fa-circle-plus"></i>
+                </div>
+            </div>
+
+            <!-- player section -->
+            <div class="player">
+
+                <div class="player-controls">
+                    <img src="./assets/player_icon1.png" class="player-control-icon">
+                    <img src="./assets/player_icon2.png" class="player-control-icon">
+                    <img src="./assets/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                    <img src="./assets/player_icon4.png" class="player-control-icon">
+                    <img src="./assets/player_icon5.png" class="player-control-icon">
+                </div>
+
+                <div class="playback-bar">
+                    <span>00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span>03:33</span>
+                </div>
+
+            </div>
+
+            <!-- control section -->
+            <div class="controls">
+
+                <i class="fa-solid fa-microphone-lines control-icon" id="control-icon1"></i>
+                <i class="fa-solid fa-bars control-icon" id="control-icon2"></i>
+                <i class="fa-solid fa-desktop control-icon" id="control-icon3"></i>
+                <i class="fa-solid fa-volume-high" class="control-icon4"></i>
+                
+                <input type="range" class="volume-bar" min="0" max="100" step="1" />
+                
+                <i class="fa-regular fa-square control-icon" id="control-icon5"></i>
+                <i class="fa-solid fa-expand control-icon" id="control-icon6"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
